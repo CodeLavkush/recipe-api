@@ -1,6 +1,12 @@
 [flake8]
+max-line-length = 100
 exclude = 
     migrations,
     __pycahe__,
     manage.py,
     settings.py
+ignore = 
+    E203,  # whitespace before ':'
+    E266,  # too many leading '#' for block comment
+    E501,  # line too long (let black handle this)
+    W503   # line break before binary operator
